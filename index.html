@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="formularz.js"></script> 
+    <link rel="stylesheet" href="style.css">
+    <title>JAVASCRIPT STRONA</title>
+  
+</head>
+<body>
+    <p class="strona">Strona obliczenia</p>
+    
+    <p><input type="button" class="przycisko" value="Odśwież" onClick="location.reload();" /></p>
+
+    <p>
+        <h1 class="sum"> Obliczanie sumy i średniej (z 3 liczb)</h1>
+    <input type="number" class="przy" id="a">
+    <input type="number" class="przy" id="b">
+    <input type="number" class="przy" id="c">
+    
+    
+    <input type="button" class="przycisko" value="DODAWANIE" onclick="suma()">
+    <input type="button" class="przycisko" value="ŚREDNIA" onclick="srednia()">
+    </p>
+
+    <h1>
+        <p class="pier">Obliczanie sumy, różnicy oraz iloczynu (z 2 liczb)</p>
+        <input type="number" class="przy" id="u">
+        <input type="number" class="przy" id="i">
+        <input type="button" class="przycisko" value="SUMA" onclick="sumik()">
+        <input type="button" class="przycisko" value="RÓŻNICA" onclick="rozek()">
+        <input type="button" class="przycisko" value="ILOCZYN" onclick="ilocz()">
+        <input type="button" class="przycisko" value="WSZYSTKO" onclick="wszy()">
+    </h1>  
+
+<h1>
+    <p class="pier">Wpisz liczbę by obliczyć pierwiastek</p>
+    <input type="number" class="przy" id="q">
+    <input type="button" class="przycisko" value="PIERWIASTEK" onclick="pierwiastek()">
+</h1>  
+
+<h1>
+    <p class="pier">Wpisz dlugość boku kwadratu by obliczyć pole</p>
+    <input type="number" class="przy" id="w">
+    <input type="button" class="przycisko"  value="OBLICZ POLE" onclick="kwadrat()">
+   
+</h1>
+    
+<h1>
+    <p class="pier">Obliczanie pola i obwodu koła</p>
+    <input type="number" class="przy" id="k">
+    <input type="button" class="przycisko" value="POLE" onclick="kolo()">
+    <input type="button" class="przycisko" value="OBDÓW" onclick="obw()">
+</h1>  
+
+<h1 class="pier">
+Pole prostopadłościanu
+<p>
+<img src="prosto.png" alt="">
+
+<u class="blo">
+    Dlugość boku A
+    <input type="number" class="przy" id="h">
+</u>
+<u class="blo">
+    Dlugość boku B
+    <input type="number" class="przy" id="j">
+</u>
+<u class="blo">
+    Dlugość boku C
+    <input type="number" class="przy" id="l">
+</u>
+<input type="button" class="przycisko" value="OBLICZ" onclick="pole()">
+
+</p>
+</h1>
+
+
+<h1>
+
+<p class="pier">Obliczanie kosztu przejazdu 350km z Gdańska do Szczecina (Cena podana w PLN) </p>
+<input type="button" class="przycisko" value="Cena z 95" onclick="dp()">
+<input type="button" class="przycisko" value="Cena z 98" onclick="dos()">
+<input type="button" class="przycisko" value="Cena z ON" onclick="oen()">
+<input type="button" class="przycisko" value="Cena z LPG" onclick="elpe()">
+
+</h1>
+
+
+<h1 class="odstep">Obliczanie kosztu przejazdu (Cena podana w PLN) </h1>
+
+<p>
+<input type="button"  class="przycisko" value="Cena z 95" onclick="depe()">
+Długość trasy---><input type="number" id="q1">
+Spalanie---><input type="number" id="q2">
+</p>
+<p>
+<input type="button" class="przycisko" value="Cena z 98" onclick="osiem()">
+Długość trasy---><input type="number" id="w1">
+Spalanie---><input type="number" id="w2">
+</p>
+<p>
+<input type="button" class="przycisko" value="Cena z ON" onclick="onnen()">
+Długość trasy---><input type="number" id="e1">
+Spalanie---><input type="number" id="e2">
+</p>
+<p>
+<input type="button" class="przycisko" value="Cena z LPG" onclick="lypyg()">
+Długość trasy---><input type="number" id="r1">
+Spalanie---><input type="number" id="r2">
+</p>
+
+
+
+<h1>
+<p class="pier">Obliczanie zysków z lokaty</p>
+<input type="number" class="przy" id="lokat">
+<input type="button" class="przycisko" value="OBLICZ" onclick="lokata()">
+</h1>
+
+
+<button class="przycisk">Losuj</button>
+
+
+<script>
+const result = [];
+
+function losowanie()
+{
+    if(result.length === 2)
+    return;
+const div = document.createElement("div");
+const wyniklosowania = Math.floor(Math.random() * 99 + 1);
+div.textContent = wyniklosowania;
+document.body.appendChild(div);
+result.push(wyniklosowania)
+}
+
+const button = document.querySelector("button");
+
+button.addEventListener("click", losowanie);
+
+
+</script>
+
+<input type="button" value="SUMOWANIE" onclick="sum()">
+<input type="button" value="ODEJMOWANIE" onclick="ode()">
+<input type="button" value="MNOŻENIE" onclick="mno()">
+
+
+
+</body>
+</html>

@@ -1,0 +1,92 @@
+
+html {
+ background-image: url('pentagon.png') ;
+}
+
+.strona{
+    font-size: 55px;
+    margin: auto;
+    text-align: center;
+    font-family: 'Verdana';
+    border-style: dotted ;
+    border-color: rgb(55, 0, 255);
+ }
+    
+    .przycisk {
+display: block;
+margin: 0 auto;
+background-color: #fff;
+border: 3 px solid black;
+padding: 10px 20px;
+font-size: 20px;
+font-family: Arial;
+transition: .3s;
+}
+
+.przycisk:hover {
+background-color: #000;
+color: white;
+}
+
+.przycisko {
+    margin: left;
+    background-color: #fff;
+    border: 3 px solid black;
+    padding: 10px 20px;
+    font-size: 20px;
+    font-family: Arial;
+    transition: .3s;
+    }
+    
+    .przycisko:hover {
+    background-color: #000;
+    color: white;
+    }
+
+.odstep {
+    margin: 95px 0px 20px;
+    font-family: Verdana;
+}
+
+
+.przy {
+    font-size: large;
+    font-family: Verdana;
+}
+
+.sum {
+    margin: 50px 0px 20px;
+    font-family: Verdana;
+
+}
+
+.pier {
+    margin: 80px 0px 20px;
+    font-family: Verdana;
+
+}
+
+.blo {
+    display: block;
+    margin: 20px 0px 20px;
+    font-size: 28px;
+    
+}
+
+
+div {
+    float: left;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: rgb(21, 255, 177);
+    margin: 10px;
+    line-height: 60px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+
+
